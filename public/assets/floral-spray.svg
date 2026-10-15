@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 220">
+  <defs>
+    <radialGradient id="spw" cx="50%" cy="36%" r="68%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="55%" stop-color="#eef5fc"/>
+      <stop offset="100%" stop-color="#c2d8ee"/>
+    </radialGradient>
+    <radialGradient id="spb" cx="50%" cy="36%" r="68%">
+      <stop offset="0%" stop-color="#eef4fc"/>
+      <stop offset="55%" stop-color="#bccfec"/>
+      <stop offset="100%" stop-color="#8fb0d4"/>
+    </radialGradient>
+    <linearGradient id="slf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#a9bfd6"/>
+      <stop offset="100%" stop-color="#57748f"/>
+    </linearGradient>
+    <linearGradient id="sgd" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eed9a0"/>
+      <stop offset="100%" stop-color="#a8854a"/>
+    </linearGradient>
+    <filter id="ssoft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+    <g id="sfl">
+      <ellipse cx="0" cy="-10" rx="9" ry="13" fill="url(#spw)"/>
+      <ellipse cx="10" cy="0" rx="13" ry="9" fill="url(#spw)"/>
+      <ellipse cx="0" cy="10" rx="9" ry="13" fill="url(#spw)"/>
+      <ellipse cx="-10" cy="0" rx="13" ry="9" fill="url(#spw)"/>
+      <circle r="3.2" fill="url(#sgd)"/>
+    </g>
+    <path id="slfshape" d="M0,0 C24,-16 56,-17 80,0 C56,17 24,16 0,0 Z" fill="url(#slf)"/>
+  </defs>
+
+  <ellipse cx="210" cy="115" rx="190" ry="70" fill="#b9cfe6" opacity="0.35" filter="url(#ssoft)"/>
+
+  <!-- main branch -->
+  <path d="M8,150 C110,120 210,150 300,105 C350,82 390,80 414,62"
+        fill="none" stroke="url(#sgd)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M120,138 C160,110 200,100 240,92" fill="none" stroke="#7b97b4"
+        stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- leaves -->
+  <g opacity="0.94">
+    <use href="#slfshape" transform="translate(60,138) rotate(-24)"/>
+    <use href="#slfshape" transform="translate(130,128) rotate(18) scale(0.9)"/>
+    <use href="#slfshape" transform="translate(190,132) rotate(-16) scale(1.05)"/>
+    <use href="#slfshape" transform="translate(255,116) rotate(14) scale(0.85)"/>
+    <use href="#slfshape" transform="translate(320,100) rotate(-12) scale(0.9)"/>
+    <use href="#slfshape" transform="translate(150,150) rotate(38) scale(0.75)"/>
+    <use href="#slfshape" transform="translate(240,140) rotate(32) scale(0.7)"/>
+  </g>
+
+  <!-- blossoms -->
+  <g>
+    <use href="#sfl" transform="translate(95,105) scale(1.15)"/>
+    <use href="#sfl" transform="translate(170,95)"/>
+    <use href="#sfl" transform="translate(225,110) scale(1.2)"/>
+    <use href="#sfl" transform="translate(295,85) scale(0.95)"/>
+    <use href="#sfl" transform="translate(360,70) scale(0.8)"/>
+    <circle cx="135" cy="120" r="8" fill="url(#spb)"/>
+    <circle cx="262" cy="128" r="7" fill="url(#spb)"/>
+    <circle cx="330" cy="108" r="6" fill="url(#spb)"/>
+  </g>
+
+  <!-- gold berries -->
+  <g fill="url(#sgd)">
+    <circle cx="60" cy="150" r="4.5"/>
+    <circle cx="205" cy="92" r="4"/>
+    <circle cx="270" cy="100" r="5"/>
+    <circle cx="390" cy="66" r="4.5"/>
+  </g>
+
+  <!-- highlights -->
+  <g fill="#ffffff" opacity="0.6">
+    <ellipse cx="150" cy="80" rx="18" ry="6" transform="rotate(-18 150 80)"/>
+    <ellipse cx="300" cy="130" rx="20" ry="6" transform="rotate(12 300 130)"/>
+  </g>
+</svg>

@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <radialGradient id="cpw" cx="50%" cy="36%" r="68%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="55%" stop-color="#f0f6fd"/>
+      <stop offset="100%" stop-color="#c2d8ee"/>
+    </radialGradient>
+    <radialGradient id="cpb" cx="50%" cy="36%" r="68%">
+      <stop offset="0%" stop-color="#eef4fc"/>
+      <stop offset="55%" stop-color="#bccfec"/>
+      <stop offset="100%" stop-color="#8fb0d4"/>
+    </radialGradient>
+    <linearGradient id="clf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#a9bfd6"/>
+      <stop offset="55%" stop-color="#7b97b4"/>
+      <stop offset="100%" stop-color="#57748f"/>
+    </linearGradient>
+    <linearGradient id="cgd" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eed9a0"/>
+      <stop offset="100%" stop-color="#a8854a"/>
+    </linearGradient>
+    <filter id="csoft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+    <g id="cfw">
+      <ellipse cx="0" cy="-15" rx="14" ry="20" fill="url(#cpw)"/>
+      <ellipse cx="15" cy="0" rx="20" ry="14" fill="url(#cpw)"/>
+      <ellipse cx="0" cy="15" rx="14" ry="20" fill="url(#cpw)"/>
+      <ellipse cx="-15" cy="0" rx="20" ry="14" fill="url(#cpw)"/>
+      <circle r="4.6" fill="url(#cgd)"/>
+      <circle cx="-1.4" cy="-1.6" r="1.5" fill="#ffffff" opacity="0.9"/>
+    </g>
+    <g id="cfb">
+      <ellipse cx="0" cy="-15" rx="14" ry="20" fill="url(#cpb)"/>
+      <ellipse cx="15" cy="0" rx="20" ry="14" fill="url(#cpb)"/>
+      <ellipse cx="0" cy="15" rx="14" ry="20" fill="url(#cpb)"/>
+      <ellipse cx="-15" cy="0" rx="20" ry="14" fill="url(#cpb)"/>
+      <circle r="4.6" fill="url(#cgd)"/>
+      <circle cx="-1.4" cy="-1.6" r="1.5" fill="#ffffff" opacity="0.9"/>
+    </g>
+    <path id="clfshape" d="M0,0 C34,-22 78,-24 112,0 C78,24 34,22 0,0 Z" fill="url(#clf)"/>
+  </defs>
+
+  <!-- ambient mist wash -->
+  <ellipse cx="170" cy="170" rx="210" ry="175" fill="#b9cfe6" opacity="0.38" filter="url(#csoft)"/>
+  <ellipse cx="330" cy="90" rx="130" ry="100" fill="#d7e5f4" opacity="0.5" filter="url(#csoft)"/>
+
+  <!-- champagne-gold stems -->
+  <g fill="none" stroke="url(#cgd)" stroke-width="5" stroke-linecap="round" opacity="0.9">
+    <path d="M-14,430 C80,340 150,270 268,196"/>
+    <path d="M-14,330 C70,270 150,220 250,170" stroke-width="3.5"/>
+    <path d="M60,-14 C110,80 160,150 240,210" stroke-width="3.5"/>
+  </g>
+
+  <!-- back leaves -->
+  <g opacity="0.92">
+    <use href="#clfshape" transform="translate(60,330) rotate(-38) scale(1.15)"/>
+    <use href="#clfshape" transform="translate(150,250) rotate(-18) scale(1.3)"/>
+    <use href="#clfshape" transform="translate(250,180) rotate(-8) scale(1.1)"/>
+    <use href="#clfshape" transform="translate(120,120) rotate(-52) scale(1.0)"/>
+    <use href="#clfshape" transform="translate(330,120) rotate(14) scale(0.95)"/>
+    <use href="#clfshape" transform="translate(390,210) rotate(28) scale(0.8)"/>
+  </g>
+
+  <!-- large white hydrangea head -->
+  <g transform="translate(185,165)">
+    <ellipse rx="86" ry="80" fill="#9db9d6" opacity="0.35" filter="url(#csoft)"/>
+    <use href="#cfw" transform="translate(-52,-30) scale(1.05)"/>
+    <use href="#cfw" transform="translate(0,-52) scale(1.15)"/>
+    <use href="#cfw" transform="translate(52,-30) scale(1.05)"/>
+    <use href="#cfw" transform="translate(-58,22)"/>
+    <use href="#cfw" transform="translate(0,0) scale(1.2)"/>
+    <use href="#cfw" transform="translate(58,22)"/>
+    <use href="#cfw" transform="translate(-28,54) scale(0.95)"/>
+    <use href="#cfw" transform="translate(28,54) scale(0.95)"/>
+    <use href="#cfb" transform="translate(-26,-26) scale(0.7)"/>
+    <use href="#cfb" transform="translate(26,26) scale(0.7)"/>
+  </g>
+
+  <!-- blue hydrangea head -->
+  <g transform="translate(335,105) scale(0.82)">
+    <ellipse rx="80" ry="74" fill="#7d9bbf" opacity="0.35" filter="url(#csoft)"/>
+    <use href="#cfb" transform="translate(-50,-28)"/>
+    <use href="#cfb" transform="translate(0,-50) scale(1.1)"/>
+    <use href="#cfb" transform="translate(50,-28)"/>
+    <use href="#cfb" transform="translate(-55,22) scale(0.95)"/>
+    <use href="#cfb" transform="translate(0,0) scale(1.15)"/>
+    <use href="#cfb" transform="translate(55,22) scale(0.95)"/>
+    <use href="#cfb" transform="translate(0,52)"/>
+    <use href="#cfw" transform="translate(-25,0) scale(0.65)"/>
+    <use href="#cfw" transform="translate(25,-25) scale(0.65)"/>
+  </g>
+
+  <!-- small white cluster -->
+  <g transform="translate(95,300) scale(0.62)">
+    <use href="#cfw" transform="translate(-45,-25)"/>
+    <use href="#cfw" transform="translate(0,-45) scale(1.1)"/>
+    <use href="#cfw" transform="translate(45,-25)"/>
+    <use href="#cfw" transform="translate(0,0) scale(1.15)"/>
+    <use href="#cfw" transform="translate(-30,35) scale(0.9)"/>
+    <use href="#cfw" transform="translate(30,35) scale(0.9)"/>
+  </g>
+
+  <!-- buds and gold berries -->
+  <g>
+    <circle cx="280" cy="250" r="11" fill="url(#cpb)"/>
+    <circle cx="276" cy="246" r="3.2" fill="#ffffff" opacity="0.85"/>
+    <circle cx="420" cy="150" r="9" fill="url(#cpw)"/>
+    <circle cx="60" cy="220" r="10" fill="url(#cpw)"/>
+    <circle cx="250" cy="60" r="7" fill="url(#cgd)"/>
+    <circle cx="300" cy="300" r="6" fill="url(#cgd)"/>
+    <circle cx="150" cy="380" r="7" fill="url(#cgd)"/>
+    <circle cx="380" cy="260" r="5.5" fill="url(#cgd)"/>
+    <circle cx="35" cy="140" r="5" fill="url(#cgd)"/>
+  </g>
+
+  <!-- front leaves for depth -->
+  <g>
+    <use href="#clfshape" transform="translate(40,250) rotate(-30) scale(0.9)"/>
+    <use href="#clfshape" transform="translate(210,300) rotate(8) scale(1.05)"/>
+    <use href="#clfshape" transform="translate(280,60) rotate(-24) scale(0.75)"/>
+    <use href="#clfshape" transform="translate(90,60) rotate(-60) scale(0.7)"/>
+  </g>
+
+  <!-- petal highlights -->
+  <g fill="#ffffff" opacity="0.55">
+    <ellipse cx="150" cy="120" rx="26" ry="9" transform="rotate(-28 150 120)"/>
+    <ellipse cx="320" cy="70" rx="22" ry="8" transform="rotate(-14 320 70)"/>
+    <ellipse cx="230" cy="230" rx="20" ry="7" transform="rotate(18 230 230)"/>
+  </g>
+</svg>
